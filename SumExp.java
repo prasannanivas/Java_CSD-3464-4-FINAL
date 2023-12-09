@@ -1,4 +1,3 @@
-// Class for representing a Sum expression
 public class SumExp extends BinaryExp {
     public SumExp(ArithmeticExp left, ArithmeticExp right) {
         super(left, right);
@@ -10,7 +9,7 @@ public class SumExp extends BinaryExp {
     }
 
     @Override
-    protected String getOperator() {
+    public String getOperator() {
         return " + ";
     }
 }

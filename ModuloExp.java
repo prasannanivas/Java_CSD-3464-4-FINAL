@@ -1,4 +1,3 @@
-// Class for representing a Modulo expression
 public class ModuloExp extends BinaryExp {
     public ModuloExp(ArithmeticExp left, ArithmeticExp right) {
         super(left, right);
@@ -10,7 +9,7 @@ public class ModuloExp extends BinaryExp {
     }
 
     @Override
-    protected String getOperator() {
+    public String getOperator() {
         return " % ";
     }
 }

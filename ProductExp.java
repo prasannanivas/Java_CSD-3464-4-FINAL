@@ -1,4 +1,3 @@
-// Class for representing a Product expression
 public class ProductExp extends BinaryExp {
     public ProductExp(ArithmeticExp left, ArithmeticExp right) {
         super(left, right);
@@ -10,7 +9,7 @@ public class ProductExp extends BinaryExp {
     }
 
     @Override
-    protected String getOperator() {
+    public String getOperator() {
         return " * ";
     }
 }

@@ -1,7 +1,6 @@
-// Abstract class for binary expressions
 public abstract class BinaryExp extends ArithmeticExp {
-    protected ArithmeticExp left;
-    protected ArithmeticExp right;
+    public ArithmeticExp left;
+    public ArithmeticExp right;
 
     public BinaryExp(ArithmeticExp left, ArithmeticExp right) {
         this.left = left;
@@ -13,5 +12,5 @@ public abstract class BinaryExp extends ArithmeticExp {
         return left.toString() + getOperator() + right.toString();
     }
 
-    protected abstract String getOperator();
+    public abstract String getOperator();
 }
