@@ -29,6 +29,11 @@ public class ArithmeticOperation {
             System.out.println(e.getMessage());
         }
 
+        System.out.println("Testing Subtraction operation: 20-15");
+        ArithmeticExp subExp = new SubExp(new NumberExp(20), new NumberExp(15));
+        System.out.println("Expression: " + subExp.toString());
+        System.out.println("Result: " + evaluate(subExp));
+
     }
 
     public static int evaluate(ArithmeticExp expression) {
