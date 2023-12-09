@@ -6,7 +6,8 @@ public class DivExp extends BinaryExp {
     @Override
     public int evaluate() {
         if (right.evaluate() == 0) {
-            throw new ArithmeticException("cannot divide by zero... Sorry.");
+            throw new ArithmeticException(
+                    "cannot divide by zero... Sorry. But I can give you the answer as 'Infinity' ");
         }
         return left.evaluate() / right.evaluate();
     }

@@ -14,6 +14,21 @@ public class ArithmeticOperation {
         ArithmeticExp moduloExp = new ModuloExp(new NumberExp(15), new NumberExp(7));
         System.out.println("Expression: " + moduloExp.toString());
         System.out.println("Result: " + evaluate(moduloExp));
+
+        System.out.println("Testing Division operation: 20%10");
+        ArithmeticExp divExp = new DivExp(new NumberExp(20), new NumberExp(10));
+        System.out.println("Expression: " + divExp.toString());
+        System.out.println("Result: " + evaluate(divExp));
+
+        System.out.println("Testing Division by zero operation: 20%0");
+        ArithmeticExp divExp2 = new DivExp(new NumberExp(20), new NumberExp(0));
+        System.out.println("Expression: " + divExp2.toString());
+        try {
+            System.out.println("Result: " + evaluate(divExp2));
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 
     public static int evaluate(ArithmeticExp expression) {
